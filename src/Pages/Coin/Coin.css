@@ -42,7 +42,10 @@
 }
 
 .coin-name img {
-  max-width: 100px;
+  max-width: 150px;
+  border: 2px solid white; 
+  border-radius: 8px; 
+  padding: 30px;
 }
 
 .coin-name p b {
@@ -54,6 +57,9 @@
   max-width: 900px;
   margin: auto;
   margin-bottom: 50px;
+  background-color: #ffffff; 
+  border-radius: 10px; 
+  padding: 20px;
 }
 
 .coin-info {
@@ -77,5 +83,5 @@
 }
 
 .coin-info ul li:first-child {
-  margin-right: 150px;
+  padding-right: 150px;
 }
