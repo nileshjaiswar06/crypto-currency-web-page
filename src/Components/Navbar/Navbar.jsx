@@ -3,6 +3,7 @@ import './Navbar.css'
 import image from '../../assets/image.png'
 import {CoinContext} from '../../Context/Coin_Context'
 import {useContext} from 'react'
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -26,9 +27,11 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <img src={image} alt='image' className='image'/>
+      <Link to={'/'}>
+        <img src={image} alt='image' className='image'/>
+      </Link>
       <ul>
-        <li>Home</li>
+        <Link to={'/'}><li>Home</li></Link>
         <li>Features</li>
         <li>Pricing</li>
         <li>Blog</li>
