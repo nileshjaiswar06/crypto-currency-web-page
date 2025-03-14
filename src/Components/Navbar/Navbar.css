@@ -10,6 +10,7 @@
 .navbar .image{
   width: max(4vw, 40px);
   filter: invert(100%) brightness(100%);
+  margin-right: 110px;
 }
 
 .navbar ul{
@@ -25,7 +26,7 @@
 .nav-right{
   display: flex;
   align-items: center;
-  gap: max(1vw, 40px);
+  gap: max(1vw, 12px);
 }
 
 .navbar select{
