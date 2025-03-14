@@ -32,7 +32,7 @@ const Navbar = () => {
       </Link>
       <ul>
         <Link to={'/'}><li>Home</li></Link>
-        <li>Features</li>
+        <Link to='/nft-price-tracker'><li>NFT Price Tracker</li></Link>
         <li>Pricing</li>
         <li>Blog</li>
       </ul>
