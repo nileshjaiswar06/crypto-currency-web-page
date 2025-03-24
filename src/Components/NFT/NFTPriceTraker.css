@@ -78,3 +78,71 @@
 .nft-price-tracker li .market-cap span {
   margin-left: auto;
 }
+
+/* Header section */
+.header {
+  margin-right: 10px;
+  margin-bottom: 9px;
+  display: flex;
+  justify-content: center; /* Center the heading */
+  align-items: center;
+  position: relative; /* Allows positioning of pagination */
+  width: 100%;
+}
+
+.header h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+  flex-grow: 1; /* Ensures the heading stays centered */
+}
+
+/* Pagination buttons */
+.pagination {
+  position: absolute; /* Position the buttons independently */
+  right: 0; /* Align the buttons to the right */
+  display: flex;
+  gap: 5px;
+}
+
+.pagination button {
+  background: transparent;
+  border-radius: 25%;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  color: white;
+  border-width: 2.3px;
+  border-color: white;
+  /* background-color: #f9f9f9; */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button.active {
+  background-color: #954ad2;
+  color: white;
+  border-color: #954ad2;
+}
+
+.pagination button:hover {
+  background-color: #954ad2;
+  color: white;
+}
+
+/* Dropdown for selecting a page */
+.pagination select {
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #1E1E1E; /* Matches the dark theme */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* .pagination select:hover {
+  background-color: #954ad2; /* Matches the active button color 
+  color: white;
+} */

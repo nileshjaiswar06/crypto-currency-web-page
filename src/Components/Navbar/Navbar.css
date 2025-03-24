@@ -20,13 +20,14 @@
 }
 
 .navbar li{
+  margin-left: 12px;
   cursor: pointer;
 }
 
 .nav-right{
   display: flex;
   align-items: center;
-  gap: max(1vw, 12px);
+  gap: max(2vw, 12px);
 }
 
 .navbar select{
