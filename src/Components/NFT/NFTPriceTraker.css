@@ -1,0 +1,148 @@
+.nft-price-tracker {
+  padding: 20px;
+  background-color: #121212;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nft-price-tracker h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.nft-price-tracker .search-bar {
+  width: 80%;
+  max-width: 600px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.nft-price-tracker ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.nft-price-tracker li {
+  background-color: #1E1E1E;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px; /* Add margin-bottom to create space between items */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.nft-price-tracker li img.nft-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.nft-price-tracker li .nft-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nft-price-tracker li h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.nft-price-tracker li p {
+  margin: 0;
+  color: #ffffff;
+}
+
+.nft-price-tracker li .symbol,
+.nft-price-tracker li .market-cap {
+  margin-top: 10px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nft-price-tracker li .symbol span,
+.nft-price-tracker li .market-cap span {
+  margin-left: auto;
+}
+
+/* Header section */
+.header {
+  margin-right: 10px;
+  margin-bottom: 9px;
+  display: flex;
+  justify-content: center; /* Center the heading */
+  align-items: center;
+  position: relative; /* Allows positioning of pagination */
+  width: 100%;
+}
+
+.header h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+  flex-grow: 1; /* Ensures the heading stays centered */
+}
+
+/* Pagination buttons */
+.pagination {
+  position: absolute; /* Position the buttons independently */
+  right: 0; /* Align the buttons to the right */
+  display: flex;
+  gap: 5px;
+}
+
+.pagination button {
+  background: transparent;
+  border-radius: 25%;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  color: white;
+  border-width: 2.3px;
+  border-color: white;
+  /* background-color: #f9f9f9; */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button.active {
+  background-color: #954ad2;
+  color: white;
+  border-color: #954ad2;
+}
+
+.pagination button:hover {
+  background-color: #954ad2;
+  color: white;
+}
+
+/* Dropdown for selecting a page */
+.pagination select {
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #1E1E1E; /* Matches the dark theme */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* .pagination select:hover {
+  background-color: #954ad2; /* Matches the active button color 
+  color: white;
+} */
