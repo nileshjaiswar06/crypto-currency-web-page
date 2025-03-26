@@ -8,9 +8,16 @@ const Converter = () => {
   const [crypto2, setCrypto2] = useState('');
   const [amount, setAmount] = useState(1);
   const [conversionResult, setConversionResult] = useState(null);
-
+  const [warning, setWarning] = useState(''); // State to store warning messages
 
   const handleConvert = async () => {
+    // Validation: Ensure both "From" and "To" fields are filled
+    if (!crypto1 || !crypto2) {
+      setWarning('⚠️ Please select both "From" and "To" cryptocurrencies.');
+      return;
+    }
+
+    setWarning(''); // Clear any previous warnings
 
     try {
       const response = await fetch(
@@ -90,7 +97,7 @@ const Converter = () => {
         </label>
       </div>
       <button onClick={handleConvert}>Convert</button>
-
+      {warning && <p className="warning">{warning}</p>} {/* Display warning message */}
       {conversionResult !== null && (
         <div>
           <h3>Conversion Result:</h3>

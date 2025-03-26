@@ -106,6 +106,18 @@
   color: white; /* Ensure equals sign is white */
 }
 
+.warning {
+  color: #ff4d4d; /* Bright red color for warning */
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  background-color: rgba(255, 77, 77, 0.1); /* Light red background */
+  padding: 5px 10px;
+  border: 1px solid #ff4d4d; /* Red border for emphasis */
+  border-radius: 4px;
+}
+
 .converted-amount {
   margin-top: 20px;
 }
