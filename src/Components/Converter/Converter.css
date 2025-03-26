@@ -1,0 +1,139 @@
+.converter {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #686868;
+  border-radius: 8px;
+  background-color: transparent;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Aesthetic box shadow */
+  font-family: Arial, sans-serif;
+  color: white; /* Make all text white */
+}
+
+.converter h2 {
+  text-align: center;
+  color: white; /* Ensure the heading is white */
+  margin-bottom: 20px;
+}
+
+.converter label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: white; /* Make label text white */
+}
+
+.converter input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #333; /* Dark background for inputs */
+  color: white; /* White text for inputs */
+}
+
+.converter input::placeholder {
+  color: #aaa; /* Light gray placeholder text */
+}
+
+.converter button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6E1DB1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.converter button:hover {
+  background-color: #6e1db1c8;
+}
+
+.converter h3 {
+  margin-top: 20px;
+  color: white; /* Ensure the heading is white */
+}
+
+.converter p {
+  font-size: 16px;
+  color: white; /* Make paragraph text white */
+  text-align: center;
+}
+
+/* === Fix for Conversion Result Layout === */
+.conversion-result {
+  display: flex;
+  justify-content: center; /* Center everything */
+  align-items: center;
+  gap: 30px; /* Space between left, =, and right */
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+  padding-left: 17px;
+  padding-right: 9px;
+  color: white; /* Make conversion result text white */
+}
+
+/* Container for amounts */
+.crypto-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px; /* Fixed width for equal spacing */
+  text-align: center;
+}
+
+/* Amount Styling */
+.amount-left,
+.amount-right {
+  font-size: 20px; /* Consistent font size */
+  font-weight: bold;
+  color: white; /* Ensure amounts are white */
+}
+
+/* Equals Sign Styling */
+.equals {
+  font-size: 22px;
+  font-weight: bold;
+  min-width: 30px; /* Fixed width for consistency */
+  text-align: center;
+  color: white; /* Ensure equals sign is white */
+}
+
+.converted-amount {
+  margin-top: 20px;
+}
+
+.input-with-image {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the image and the input */
+}
+
+.input-with-image input {
+  flex: 1; /* Allow the input to take up the remaining space */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #333; /* Dark background for input */
+  color: white; /* White text for input */
+}
+
+/* Styling for the crypto images */
+.currency-image-left,
+.currency-image-right {
+  width: 40px; /* Adjust size of the image */
+  height: 40px;
+  border-radius: 12px; /* Curved border for square shape */
+  border: 1px solid white; /* Add a white border around images */
+  background-color: #222; /* Add a dark background for the image container */
+  padding: 5px; /* Add padding inside the image container */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
