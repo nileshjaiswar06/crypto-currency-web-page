@@ -43,7 +43,7 @@ const Converter = () => {
 
   return (
     <div className="converter">
-      <h2>Crypto Converter</h2>
+      <h2>Crypto Converter ( In $ )</h2>
       <div>
         <label>
           From:
@@ -78,48 +78,55 @@ const Converter = () => {
           </datalist>
         </label>
       </div>
-      <div className="amount-input-container">
-        <label>
-          Amount:
-          <div className="input-with-image">
-            <input
-              type="number"
-              value={amount}
-              onChange={(e) => {
-                const value = e.target.value;
-                if (value.length <= 10) {
-                  setAmount(value);
-                }
-              }}
-              maxLength="10"
-            />
-          </div>
-        </label>
-      </div>
+      {/* Amount Input with "From" Crypto Image */}
+<div className="amount-input-container">
+  <label>
+    Amount:
+    <div className="input-with-image">
+      {crypto1 && (
+        <img
+          className="currency-image-left"
+          src={getCoinImage(crypto1)}
+        />
+      )}
+      <input
+        type="number"
+        value={amount}
+        onChange={(e) => {
+          const value = e.target.value;
+          if (value.length <= 20) {
+            setAmount(value);
+          }
+        }}
+        maxLength="20"
+      />
+    </div>
+  </label>
+</div>
       <button onClick={handleConvert}>Convert</button>
       {warning && <p className="warning">{warning}</p>} {/* Display warning message */}
       {conversionResult !== null && (
         <div>
-          <h3>Conversion Result:</h3>
-          <div className="conversion-result">
-            <div className="crypto-container">
-              <img
-                className="currency-image-left"
-                src={getCoinImage(crypto1)}
-                alt={crypto1}
-              />
-              <span className="amount-left">{amount}</span>
-            </div>
-            <span className="equals">=</span>
-            <div className="crypto-container">
-              <span className="amount-right">{conversionResult.toFixed(3)}</span>
-              <img
-                className="currency-image-right"
-                src={getCoinImage(crypto2)}
-                alt={crypto2}
-              />
-            </div>
-          </div>
+          
+          {/* Converted Amount Input with "To" Crypto Image */}
+<div className="converted-amount">
+  <label>
+    Converted Amount:
+    <div className="input-with-image">
+      {crypto2 && (
+        <img
+          className="currency-image-right"
+          src={getCoinImage(crypto2)}
+        />
+      )}
+      <input
+        type="text"
+        value={conversionResult !== null ? `${conversionResult.toFixed(6)}` : ''}
+        readOnly
+      />
+    </div>
+  </label>
+</div>
         </div>
       )}
     </div>
