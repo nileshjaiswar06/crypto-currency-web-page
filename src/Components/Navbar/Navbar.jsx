@@ -33,8 +33,7 @@ const Navbar = () => {
       <ul>
         <Link to={'/'}><li>Home</li></Link>
         <Link to='/nft-price-tracker'><li>NFTs</li></Link>
-        <li>Pricing</li>
-        <li>Blog</li>
+        <Link to='/converter'><li>Converter</li></Link>
       </ul>
       <div className="nav-right">
         <select onChange={currencyHandleChange}>
