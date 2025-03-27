@@ -109,8 +109,8 @@ const NFTPriceTracker = () => {
     <div className="nft-price-tracker">
       {/* Header Section */}
       <div className="header">
-        <h2>Trending NFTs</h2>
-        <div className="pagination">
+        <h2 style={{marginTop: '20px'}}>Trending NFTs</h2>
+        <div style={{marginTop: '20px', marginRight: '5px'}} className="pagination">
           {renderPagination()}
           {/* Select Page Dropdown */}
           <select
@@ -132,7 +132,7 @@ const NFTPriceTracker = () => {
           <li key={nft.id} className="nft-item">
             <img
               src={nft.image?.small || nft.image?.small_2x}
-              alt={nft.name.slice(0, 5)}
+              alt={nft.name}
               className="nft-image"
             />
             <div className="nft-details">
